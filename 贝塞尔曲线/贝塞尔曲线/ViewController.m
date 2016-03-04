@@ -73,6 +73,7 @@ IB_DESIGNABLE
     [self creatQuxian];
     [self creatRound];
     [self creatMyName];
+    [self creatCycle];
 }
 
 // 直线
@@ -177,6 +178,23 @@ IB_DESIGNABLE
     animation.toValue = @1;
     animation.duration = 3;
     [roundLayer addAnimation:animation forKey:nil];
+}
+
+- (void)creatCycle{
+    CAShapeLayer *cycleLayer = [CAShapeLayer layer];
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(300, 200) radius:50 startAngle:M_PI_2 endAngle:M_PI*2+M_PI_2 clockwise:YES];
+    cycleLayer.path = path.CGPath;
+    cycleLayer.fillColor = [UIColor clearColor].CGColor;
+    cycleLayer.strokeColor = [UIColor greenColor].CGColor;
+    cycleLayer.lineWidth = 5;
+    [self.layerView.layer addSublayer:cycleLayer];
+    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+    animation.fromValue = @0;
+    animation.toValue = @1;
+    animation.duration = 5;
+    [cycleLayer addAnimation:animation forKey:nil];
+    
 }
 
 
