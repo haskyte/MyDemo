@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tDg-rT-SU7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSW-SL-U6x">
+                                <rect key="frame" x="0.0" y="64" width="168" height="60"/>
+                                <color key="backgroundColor" red="0.97550928613588028" green="0.81348482528914179" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="push详情界面"/>
+                                <connections>
+                                    <segue destination="PaZ-50-Hah" kind="push" id="wYg-gY-CF7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvG-NS-FDW">
+                                <rect key="frame" x="0.0" y="253" width="221" height="93"/>
+                                <color key="backgroundColor" red="1" green="0.84230788328860351" blue="0.9221589801282275" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="随机添加一个model到数据库"/>
+                                <connections>
+                                    <action selector="saveModel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CeD-3Y-wSl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eL5-cL-Cd4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130" y="426"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="OOk-4i-wYU">
+            <objects>
+                <viewController id="PaZ-50-Hah" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WaU-VU-WLS"/>
+                        <viewControllerLayoutGuide type="bottom" id="GAc-4P-D1i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TvU-Sc-yVh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsu-IT-FfM">
+                                <rect key="frame" x="0.0" y="64" width="209" height="77"/>
+                                <color key="backgroundColor" red="1" green="0.84230788329999995" blue="0.92215898009999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="查询数据"/>
+                                <connections>
+                                    <action selector="selectModels:" destination="PaZ-50-Hah" eventType="touchUpInside" id="Sfr-fr-dpz"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vva-IU-oSy">
+                                <rect key="frame" x="0.0" y="149" width="380" height="451"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="PaZ-50-Hah" id="zfT-NM-IAO"/>
+                                    <outlet property="delegate" destination="PaZ-50-Hah" id="W12-Bk-2Dj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="D3l-NQ-xCi"/>
+                    <connections>
+                        <outlet property="tableView" destination="Vva-IU-oSy" id="8iX-qu-cSV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T2j-67-8C5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="426"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Nv-gd-f0P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tDg-rT-SU7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CFf-U4-c77">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dot-NW-4B3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tSz-cg-2nV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="426"/>
+        </scene>
+    </scenes>
+</document>

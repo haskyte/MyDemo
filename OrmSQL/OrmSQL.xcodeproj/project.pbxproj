@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41D82D6EB1974A74ED98C3A4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 471E090690B762184BFBAF68 /* libPods.a */; };
+		5394F2C71C58AAA0009CEAA3 /* UsingLKDBhelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5394F2C61C58AAA0009CEAA3 /* UsingLKDBhelper.m */; };
+		53A128E51BF58AC5000CB000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A128E41BF58AC5000CB000 /* main.m */; };
+		53A128E81BF58AC5000CB000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A128E71BF58AC5000CB000 /* AppDelegate.m */; };
+		53A128EB1BF58AC5000CB000 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A128EA1BF58AC5000CB000 /* ViewController.m */; };
+		53A128EE1BF58AC5000CB000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A128EC1BF58AC5000CB000 /* Main.storyboard */; };
+		53A128F01BF58AC5000CB000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A128EF1BF58AC5000CB000 /* Assets.xcassets */; };
+		53A128F31BF58AC5000CB000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A128F11BF58AC5000CB000 /* LaunchScreen.storyboard */; };
+		53A128FE1BF58AC6000CB000 /* OrmSQLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A128FD1BF58AC6000CB000 /* OrmSQLTests.m */; };
+		53A129091BF58AC6000CB000 /* OrmSQLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A129081BF58AC6000CB000 /* OrmSQLUITests.m */; };
+		53A129181BF58B0A000CB000 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A129171BF58B0A000CB000 /* DetailViewController.m */; };
+		53A1291B1BF58BB4000CB000 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A1291A1BF58BB4000CB000 /* Model.m */; };
+		53A1291D1BF58BC9000CB000 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 53A1291C1BF58BC9000CB000 /* Podfile */; };
+		53A129201BF58F83000CB000 /* ModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A1291F1BF58F83000CB000 /* ModelManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53A128FA1BF58AC6000CB000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53A128D81BF58AC5000CB000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53A128DF1BF58AC5000CB000;
+			remoteInfo = OrmSQL;
+		};
+		53A129051BF58AC6000CB000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53A128D81BF58AC5000CB000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53A128DF1BF58AC5000CB000;
+			remoteInfo = OrmSQL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		267D951A868D9EA94F4E5253 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		471E090690B762184BFBAF68 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5394F2C51C58AAA0009CEAA3 /* UsingLKDBhelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsingLKDBhelper.h; sourceTree = "<group>"; };
+		5394F2C61C58AAA0009CEAA3 /* UsingLKDBhelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsingLKDBhelper.m; sourceTree = "<group>"; };
+		53A128E01BF58AC5000CB000 /* OrmSQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrmSQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A128E41BF58AC5000CB000 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53A128E61BF58AC5000CB000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53A128E71BF58AC5000CB000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53A128E91BF58AC5000CB000 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		53A128EA1BF58AC5000CB000 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		53A128ED1BF58AC5000CB000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53A128EF1BF58AC5000CB000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53A128F21BF58AC5000CB000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53A128F41BF58AC5000CB000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53A128F91BF58AC6000CB000 /* OrmSQLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrmSQLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A128FD1BF58AC6000CB000 /* OrmSQLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrmSQLTests.m; sourceTree = "<group>"; };
+		53A128FF1BF58AC6000CB000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53A129041BF58AC6000CB000 /* OrmSQLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrmSQLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A129081BF58AC6000CB000 /* OrmSQLUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrmSQLUITests.m; sourceTree = "<group>"; };
+		53A1290A1BF58AC6000CB000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53A129161BF58B0A000CB000 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		53A129171BF58B0A000CB000 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		53A129191BF58BB4000CB000 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		53A1291A1BF58BB4000CB000 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		53A1291C1BF58BC9000CB000 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		53A1291E1BF58F83000CB000 /* ModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelManager.h; sourceTree = "<group>"; };
+		53A1291F1BF58F83000CB000 /* ModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelManager.m; sourceTree = "<group>"; };
+		C53789CC64C9994C27CDD647 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53A128DD1BF58AC5000CB000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D82D6EB1974A74ED98C3A4 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A128F61BF58AC6000CB000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A129011BF58AC6000CB000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11AB82C46AE7CEE8297F9E89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C53789CC64C9994C27CDD647 /* Pods.debug.xcconfig */,
+				267D951A868D9EA94F4E5253 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		18F8D008FC30D8E34F4E72DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				471E090690B762184BFBAF68 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53A128D71BF58AC5000CB000 = {
+			isa = PBXGroup;
+			children = (
+				53A1291C1BF58BC9000CB000 /* Podfile */,
+				53A128E21BF58AC5000CB000 /* OrmSQL */,
+				53A128FC1BF58AC6000CB000 /* OrmSQLTests */,
+				53A129071BF58AC6000CB000 /* OrmSQLUITests */,
+				53A128E11BF58AC5000CB000 /* Products */,
+				11AB82C46AE7CEE8297F9E89 /* Pods */,
+				18F8D008FC30D8E34F4E72DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		53A128E11BF58AC5000CB000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53A128E01BF58AC5000CB000 /* OrmSQL.app */,
+				53A128F91BF58AC6000CB000 /* OrmSQLTests.xctest */,
+				53A129041BF58AC6000CB000 /* OrmSQLUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53A128E21BF58AC5000CB000 /* OrmSQL */ = {
+			isa = PBXGroup;
+			children = (
+				5394F2C51C58AAA0009CEAA3 /* UsingLKDBhelper.h */,
+				5394F2C61C58AAA0009CEAA3 /* UsingLKDBhelper.m */,
+				53A128E61BF58AC5000CB000 /* AppDelegate.h */,
+				53A128E71BF58AC5000CB000 /* AppDelegate.m */,
+				53A128E91BF58AC5000CB000 /* ViewController.h */,
+				53A128EA1BF58AC5000CB000 /* ViewController.m */,
+				53A129161BF58B0A000CB000 /* DetailViewController.h */,
+				53A129171BF58B0A000CB000 /* DetailViewController.m */,
+				53A129191BF58BB4000CB000 /* Model.h */,
+				53A1291A1BF58BB4000CB000 /* Model.m */,
+				53A1291E1BF58F83000CB000 /* ModelManager.h */,
+				53A1291F1BF58F83000CB000 /* ModelManager.m */,
+				53A128EC1BF58AC5000CB000 /* Main.storyboard */,
+				53A128EF1BF58AC5000CB000 /* Assets.xcassets */,
+				53A128F11BF58AC5000CB000 /* LaunchScreen.storyboard */,
+				53A128F41BF58AC5000CB000 /* Info.plist */,
+				53A128E31BF58AC5000CB000 /* Supporting Files */,
+			);
+			path = OrmSQL;
+			sourceTree = "<group>";
+		};
+		53A128E31BF58AC5000CB000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53A128E41BF58AC5000CB000 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53A128FC1BF58AC6000CB000 /* OrmSQLTests */ = {
+			isa = PBXGroup;
+			children = (
+				53A128FD1BF58AC6000CB000 /* OrmSQLTests.m */,
+				53A128FF1BF58AC6000CB000 /* Info.plist */,
+			);
+			path = OrmSQLTests;
+			sourceTree = "<group>";
+		};
+		53A129071BF58AC6000CB000 /* OrmSQLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53A129081BF58AC6000CB000 /* OrmSQLUITests.m */,
+				53A1290A1BF58AC6000CB000 /* Info.plist */,
+			);
+			path = OrmSQLUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53A128DF1BF58AC5000CB000 /* OrmSQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A1290D1BF58AC6000CB000 /* Build configuration list for PBXNativeTarget "OrmSQL" */;
+			buildPhases = (
+				61FDE1B0D6D5DE8610D92844 /* Check Pods Manifest.lock */,
+				53A128DC1BF58AC5000CB000 /* Sources */,
+				53A128DD1BF58AC5000CB000 /* Frameworks */,
+				53A128DE1BF58AC5000CB000 /* Resources */,
+				2955DC2C84B888A1196422F8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrmSQL;
+			productName = OrmSQL;
+			productReference = 53A128E01BF58AC5000CB000 /* OrmSQL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53A128F81BF58AC6000CB000 /* OrmSQLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A129101BF58AC6000CB000 /* Build configuration list for PBXNativeTarget "OrmSQLTests" */;
+			buildPhases = (
+				53A128F51BF58AC6000CB000 /* Sources */,
+				53A128F61BF58AC6000CB000 /* Frameworks */,
+				53A128F71BF58AC6000CB000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53A128FB1BF58AC6000CB000 /* PBXTargetDependency */,
+			);
+			name = OrmSQLTests;
+			productName = OrmSQLTests;
+			productReference = 53A128F91BF58AC6000CB000 /* OrmSQLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53A129031BF58AC6000CB000 /* OrmSQLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53A129131BF58AC6000CB000 /* Build configuration list for PBXNativeTarget "OrmSQLUITests" */;
+			buildPhases = (
+				53A129001BF58AC6000CB000 /* Sources */,
+				53A129011BF58AC6000CB000 /* Frameworks */,
+				53A129021BF58AC6000CB000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53A129061BF58AC6000CB000 /* PBXTargetDependency */,
+			);
+			name = OrmSQLUITests;
+			productName = OrmSQLUITests;
+			productReference = 53A129041BF58AC6000CB000 /* OrmSQLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53A128D81BF58AC5000CB000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = wujianqiang;
+				TargetAttributes = {
+					53A128DF1BF58AC5000CB000 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					53A128F81BF58AC6000CB000 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 53A128DF1BF58AC5000CB000;
+					};
+					53A129031BF58AC6000CB000 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 53A128DF1BF58AC5000CB000;
+					};
+				};
+			};
+			buildConfigurationList = 53A128DB1BF58AC5000CB000 /* Build configuration list for PBXProject "OrmSQL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53A128D71BF58AC5000CB000;
+			productRefGroup = 53A128E11BF58AC5000CB000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53A128DF1BF58AC5000CB000 /* OrmSQL */,
+				53A128F81BF58AC6000CB000 /* OrmSQLTests */,
+				53A129031BF58AC6000CB000 /* OrmSQLUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53A128DE1BF58AC5000CB000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A128F31BF58AC5000CB000 /* LaunchScreen.storyboard in Resources */,
+				53A128F01BF58AC5000CB000 /* Assets.xcassets in Resources */,
+				53A1291D1BF58BC9000CB000 /* Podfile in Resources */,
+				53A128EE1BF58AC5000CB000 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A128F71BF58AC6000CB000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A129021BF58AC6000CB000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2955DC2C84B888A1196422F8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61FDE1B0D6D5DE8610D92844 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53A128DC1BF58AC5000CB000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A128EB1BF58AC5000CB000 /* ViewController.m in Sources */,
+				53A128E81BF58AC5000CB000 /* AppDelegate.m in Sources */,
+				53A128E51BF58AC5000CB000 /* main.m in Sources */,
+				5394F2C71C58AAA0009CEAA3 /* UsingLKDBhelper.m in Sources */,
+				53A129181BF58B0A000CB000 /* DetailViewController.m in Sources */,
+				53A1291B1BF58BB4000CB000 /* Model.m in Sources */,
+				53A129201BF58F83000CB000 /* ModelManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A128F51BF58AC6000CB000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A128FE1BF58AC6000CB000 /* OrmSQLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53A129001BF58AC6000CB000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A129091BF58AC6000CB000 /* OrmSQLUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53A128FB1BF58AC6000CB000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53A128DF1BF58AC5000CB000 /* OrmSQL */;
+			targetProxy = 53A128FA1BF58AC6000CB000 /* PBXContainerItemProxy */;
+		};
+		53A129061BF58AC6000CB000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53A128DF1BF58AC5000CB000 /* OrmSQL */;
+			targetProxy = 53A129051BF58AC6000CB000 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53A128EC1BF58AC5000CB000 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53A128ED1BF58AC5000CB000 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53A128F11BF58AC5000CB000 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53A128F21BF58AC5000CB000 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53A1290B1BF58AC6000CB000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53A1290C1BF58AC6000CB000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53A1290E1BF58AC6000CB000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53789CC64C9994C27CDD647 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OrmSQL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujianqiang.OrmSQL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		53A1290F1BF58AC6000CB000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267D951A868D9EA94F4E5253 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OrmSQL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujianqiang.OrmSQL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		53A129111BF58AC6000CB000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OrmSQLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujianqiang.OrmSQLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrmSQL.app/OrmSQL";
+			};
+			name = Debug;
+		};
+		53A129121BF58AC6000CB000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OrmSQLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujianqiang.OrmSQLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrmSQL.app/OrmSQL";
+			};
+			name = Release;
+		};
+		53A129141BF58AC6000CB000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OrmSQLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujianqiang.OrmSQLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OrmSQL;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		53A129151BF58AC6000CB000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OrmSQLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujianqiang.OrmSQLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OrmSQL;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53A128DB1BF58AC5000CB000 /* Build configuration list for PBXProject "OrmSQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A1290B1BF58AC6000CB000 /* Debug */,
+				53A1290C1BF58AC6000CB000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53A1290D1BF58AC6000CB000 /* Build configuration list for PBXNativeTarget "OrmSQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A1290E1BF58AC6000CB000 /* Debug */,
+				53A1290F1BF58AC6000CB000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53A129101BF58AC6000CB000 /* Build configuration list for PBXNativeTarget "OrmSQLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A129111BF58AC6000CB000 /* Debug */,
+				53A129121BF58AC6000CB000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53A129131BF58AC6000CB000 /* Build configuration list for PBXNativeTarget "OrmSQLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53A129141BF58AC6000CB000 /* Debug */,
+				53A129151BF58AC6000CB000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53A128D81BF58AC5000CB000 /* Project object */;
+}

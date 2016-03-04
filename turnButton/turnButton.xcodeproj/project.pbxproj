@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53D43D021C7C52450025EC28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D43D011C7C52450025EC28 /* main.m */; };
+		53D43D051C7C52450025EC28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D43D041C7C52450025EC28 /* AppDelegate.m */; };
+		53D43D0D1C7C52450025EC28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D43D0C1C7C52450025EC28 /* Assets.xcassets */; };
+		53D43D101C7C52450025EC28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53D43D0E1C7C52450025EC28 /* LaunchScreen.storyboard */; };
+		53D43D1B1C7C52450025EC28 /* turnButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D43D1A1C7C52450025EC28 /* turnButtonTests.m */; };
+		53D43D261C7C52460025EC28 /* turnButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D43D251C7C52460025EC28 /* turnButtonUITests.m */; };
+		53D43D351C7C56CD0025EC28 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D43D341C7C56CD0025EC28 /* RootViewController.m */; };
+		53D43D3A1C7C58890025EC28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53D43D381C7C58890025EC28 /* Main.storyboard */; };
+		53D43D3D1C7C5EF20025EC28 /* WMHamburgerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D43D3C1C7C5EF20025EC28 /* WMHamburgerButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53D43D171C7C52450025EC28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53D43CF51C7C52450025EC28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53D43CFC1C7C52450025EC28;
+			remoteInfo = turnButton;
+		};
+		53D43D221C7C52450025EC28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53D43CF51C7C52450025EC28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53D43CFC1C7C52450025EC28;
+			remoteInfo = turnButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53D43CFD1C7C52450025EC28 /* turnButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = turnButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D43D011C7C52450025EC28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53D43D031C7C52450025EC28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53D43D041C7C52450025EC28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53D43D0C1C7C52450025EC28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53D43D0F1C7C52450025EC28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53D43D111C7C52450025EC28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53D43D161C7C52450025EC28 /* turnButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = turnButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D43D1A1C7C52450025EC28 /* turnButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = turnButtonTests.m; sourceTree = "<group>"; };
+		53D43D1C1C7C52450025EC28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53D43D211C7C52450025EC28 /* turnButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = turnButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D43D251C7C52460025EC28 /* turnButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = turnButtonUITests.m; sourceTree = "<group>"; };
+		53D43D271C7C52460025EC28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53D43D331C7C56CD0025EC28 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		53D43D341C7C56CD0025EC28 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		53D43D391C7C58890025EC28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53D43D3B1C7C5EF20025EC28 /* WMHamburgerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMHamburgerButton.h; sourceTree = "<group>"; };
+		53D43D3C1C7C5EF20025EC28 /* WMHamburgerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMHamburgerButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53D43CFA1C7C52450025EC28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53D43D131C7C52450025EC28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53D43D1E1C7C52450025EC28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53D43CF41C7C52450025EC28 = {
+			isa = PBXGroup;
+			children = (
+				53D43CFF1C7C52450025EC28 /* turnButton */,
+				53D43D191C7C52450025EC28 /* turnButtonTests */,
+				53D43D241C7C52460025EC28 /* turnButtonUITests */,
+				53D43CFE1C7C52450025EC28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53D43CFE1C7C52450025EC28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53D43CFD1C7C52450025EC28 /* turnButton.app */,
+				53D43D161C7C52450025EC28 /* turnButtonTests.xctest */,
+				53D43D211C7C52450025EC28 /* turnButtonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53D43CFF1C7C52450025EC28 /* turnButton */ = {
+			isa = PBXGroup;
+			children = (
+				53D43D031C7C52450025EC28 /* AppDelegate.h */,
+				53D43D041C7C52450025EC28 /* AppDelegate.m */,
+				53D43D331C7C56CD0025EC28 /* RootViewController.h */,
+				53D43D341C7C56CD0025EC28 /* RootViewController.m */,
+				53D43D3B1C7C5EF20025EC28 /* WMHamburgerButton.h */,
+				53D43D3C1C7C5EF20025EC28 /* WMHamburgerButton.m */,
+				53D43D381C7C58890025EC28 /* Main.storyboard */,
+				53D43D0C1C7C52450025EC28 /* Assets.xcassets */,
+				53D43D0E1C7C52450025EC28 /* LaunchScreen.storyboard */,
+				53D43D111C7C52450025EC28 /* Info.plist */,
+				53D43D001C7C52450025EC28 /* Supporting Files */,
+			);
+			path = turnButton;
+			sourceTree = "<group>";
+		};
+		53D43D001C7C52450025EC28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53D43D011C7C52450025EC28 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53D43D191C7C52450025EC28 /* turnButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				53D43D1A1C7C52450025EC28 /* turnButtonTests.m */,
+				53D43D1C1C7C52450025EC28 /* Info.plist */,
+			);
+			path = turnButtonTests;
+			sourceTree = "<group>";
+		};
+		53D43D241C7C52460025EC28 /* turnButtonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53D43D251C7C52460025EC28 /* turnButtonUITests.m */,
+				53D43D271C7C52460025EC28 /* Info.plist */,
+			);
+			path = turnButtonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53D43CFC1C7C52450025EC28 /* turnButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53D43D2A1C7C52460025EC28 /* Build configuration list for PBXNativeTarget "turnButton" */;
+			buildPhases = (
+				53D43CF91C7C52450025EC28 /* Sources */,
+				53D43CFA1C7C52450025EC28 /* Frameworks */,
+				53D43CFB1C7C52450025EC28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = turnButton;
+			productName = turnButton;
+			productReference = 53D43CFD1C7C52450025EC28 /* turnButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53D43D151C7C52450025EC28 /* turnButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53D43D2D1C7C52460025EC28 /* Build configuration list for PBXNativeTarget "turnButtonTests" */;
+			buildPhases = (
+				53D43D121C7C52450025EC28 /* Sources */,
+				53D43D131C7C52450025EC28 /* Frameworks */,
+				53D43D141C7C52450025EC28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53D43D181C7C52450025EC28 /* PBXTargetDependency */,
+			);
+			name = turnButtonTests;
+			productName = turnButtonTests;
+			productReference = 53D43D161C7C52450025EC28 /* turnButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53D43D201C7C52450025EC28 /* turnButtonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53D43D301C7C52460025EC28 /* Build configuration list for PBXNativeTarget "turnButtonUITests" */;
+			buildPhases = (
+				53D43D1D1C7C52450025EC28 /* Sources */,
+				53D43D1E1C7C52450025EC28 /* Frameworks */,
+				53D43D1F1C7C52450025EC28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53D43D231C7C52450025EC28 /* PBXTargetDependency */,
+			);
+			name = turnButtonUITests;
+			productName = turnButtonUITests;
+			productReference = 53D43D211C7C52450025EC28 /* turnButtonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53D43CF51C7C52450025EC28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = wujianqiang;
+				TargetAttributes = {
+					53D43CFC1C7C52450025EC28 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					53D43D151C7C52450025EC28 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 53D43CFC1C7C52450025EC28;
+					};
+					53D43D201C7C52450025EC28 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 53D43CFC1C7C52450025EC28;
+					};
+				};
+			};
+			buildConfigurationList = 53D43CF81C7C52450025EC28 /* Build configuration list for PBXProject "turnButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53D43CF41C7C52450025EC28;
+			productRefGroup = 53D43CFE1C7C52450025EC28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53D43CFC1C7C52450025EC28 /* turnButton */,
+				53D43D151C7C52450025EC28 /* turnButtonTests */,
+				53D43D201C7C52450025EC28 /* turnButtonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53D43CFB1C7C52450025EC28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D43D3A1C7C58890025EC28 /* Main.storyboard in Resources */,
+				53D43D101C7C52450025EC28 /* LaunchScreen.storyboard in Resources */,
+				53D43D0D1C7C52450025EC28 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53D43D141C7C52450025EC28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53D43D1F1C7C52450025EC28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53D43CF91C7C52450025EC28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D43D051C7C52450025EC28 /* AppDelegate.m in Sources */,
+				53D43D351C7C56CD0025EC28 /* RootViewController.m in Sources */,
+				53D43D021C7C52450025EC28 /* main.m in Sources */,
+				53D43D3D1C7C5EF20025EC28 /* WMHamburgerButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53D43D121C7C52450025EC28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D43D1B1C7C52450025EC28 /* turnButtonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53D43D1D1C7C52450025EC28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53D43D261C7C52460025EC28 /* turnButtonUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53D43D181C7C52450025EC28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53D43CFC1C7C52450025EC28 /* turnButton */;
+			targetProxy = 53D43D171C7C52450025EC28 /* PBXContainerItemProxy */;
+		};
+		53D43D231C7C52450025EC28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53D43CFC1C7C52450025EC28 /* turnButton */;
+			targetProxy = 53D43D221C7C52450025EC28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53D43D0E1C7C52450025EC28 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53D43D0F1C7C52450025EC28 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		53D43D381C7C58890025EC28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53D43D391C7C58890025EC28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53D43D281C7C52460025EC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		53D43D291C7C52460025EC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53D43D2B1C7C52460025EC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = turnButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujie.turnButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		53D43D2C1C7C52460025EC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = turnButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujie.turnButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		53D43D2E1C7C52460025EC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = turnButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujie.turnButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/turnButton.app/turnButton";
+			};
+			name = Debug;
+		};
+		53D43D2F1C7C52460025EC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = turnButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujie.turnButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/turnButton.app/turnButton";
+			};
+			name = Release;
+		};
+		53D43D311C7C52460025EC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = turnButtonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujie.turnButtonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = turnButton;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		53D43D321C7C52460025EC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = turnButtonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujie.turnButtonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = turnButton;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53D43CF81C7C52450025EC28 /* Build configuration list for PBXProject "turnButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53D43D281C7C52460025EC28 /* Debug */,
+				53D43D291C7C52460025EC28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53D43D2A1C7C52460025EC28 /* Build configuration list for PBXNativeTarget "turnButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53D43D2B1C7C52460025EC28 /* Debug */,
+				53D43D2C1C7C52460025EC28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		53D43D2D1C7C52460025EC28 /* Build configuration list for PBXNativeTarget "turnButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53D43D2E1C7C52460025EC28 /* Debug */,
+				53D43D2F1C7C52460025EC28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		53D43D301C7C52460025EC28 /* Build configuration list for PBXNativeTarget "turnButtonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53D43D311C7C52460025EC28 /* Debug */,
+				53D43D321C7C52460025EC28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53D43CF51C7C52450025EC28 /* Project object */;
+}

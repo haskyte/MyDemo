@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>呵呵</title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript">
+        function changeValue (paramater) {
+            var but = document.getElementById('but');
+            but.innerHTML = paramater['value'];
+        }
+    function touchMe(argument){
+        logtext(argument);
+    }
+	</script>
+</head>
+<body>
+	<h1>我是标题</h1>
+	<button id="but" style="width: 100px; height: 100px;background: pink; font-size:32px;" type="click" onclick="touchMe({'value':'爱过'})">点我</button>
+	
+</body>
+</html>
