@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+use_frameworks!
+target 'photopicker' do
+pod 'TZImagePickerController', '~> 1.4.2'
+end

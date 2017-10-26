@@ -46,6 +46,8 @@
         NSLog(@"异常信息%@", exceptionValue);
     };
     self.jsContext[@"logtext"] = ^(NSDictionary *dic){
+        
+        
         NSLog(@"%@",dic[@"value"]);
     };
 }

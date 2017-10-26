@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>系统通知</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <script type="text/javascript">
+
+	function setJavaScriptToken(token) {
+		//显示token	和deviceId
+		alert(token);
+	}
+	function jsCallJavaLogin(){
+		//创建iframe
+		var iframe = document.createElement('iframe');
+		iframe.id = "login-iframe"
+		iframe.style.display = 'none';
+		iframe.src = "bridge://login";
+		document.body.appendChild(iframe);
+        
+        jsCallLogin();
+	}
+	function jsCallJavaToken(){
+		//创建iframe
+		var iframe = document.createElement('iframe');
+		iframe.id = "token-iframe"
+		iframe.style.display = 'none';
+		iframe.src = "bridge://token";
+		document.body.appendChild(iframe);
+        
+        setToken();
+	}
+
+
+	</script>
+</head>
+<body>
+
+<input type="button" value="调用java登录" onclick="jsCallJavaLogin()">
+<input type="button" value="调用java获得token" onclick="jsCallJavaToken()">
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

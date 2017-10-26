@@ -1,0 +1,4 @@
+platform :ios,'8.0'
+target 'rac' do
+pod 'ReactiveCocoa', '~> 2.5'
+end

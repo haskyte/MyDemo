@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    NSLog(@"%d",1999%1000);
+
     UIImageView *backImage = [[UIImageView alloc]initWithFrame:self.view.bounds];
     backImage.image = [UIImage imageNamed:@"Login_BackGroundImage@2x"];
     [self.view addSubview:backImage];

@@ -32,7 +32,7 @@ IB_DESIGNABLE
     UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(100, 100, 100, 100)];
     layer.path = path.CGPath;
     layer.fillColor = [UIColor clearColor].CGColor;
-    layer.strokeColor = [UIColor redColor].CGColor;
+    layer.strokeColor = [UIColor RandomColor].CGColor;
     [self.layerView.layer addSublayer:layer];
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
@@ -68,13 +68,23 @@ IB_DESIGNABLE
 //    pulse.fromValue = [NSNumber numberWithFloat:1];
 //    pulse.toValue = [NSNumber numberWithFloat:2];
 //    [layer addAnimation:pulse forKey:nil];
-    self.layerView.backgroundColor = [UIColor colorWithRed:20/255.0 green:50/255.0 blue:240/255.0 alpha:1];
+    self.layerView.backgroundColor = [UIColor RandomColor];
     [self creatLine];
     [self creatQuxian];
     [self creatRound];
     [self creatMyName];
     [self creatCycle];
+    [self creatVoice:0.6];
+
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(100, 30, 40, 20)];
+    [self.view addSubview:view];
+    [self creatPathWithView:view];
+    view.backgroundColor = [UIColor redColor];
+
 }
+
+
 
 // 直线
 
@@ -84,8 +94,8 @@ IB_DESIGNABLE
     [linePath moveToPoint:CGPointMake(20, 240)];
     [linePath addLineToPoint:CGPointMake(320, 270)];
     lineLayer.path = linePath.CGPath;
-    lineLayer.fillColor = [UIColor clearColor].CGColor;
-    lineLayer.strokeColor = [UIColor redColor].CGColor;
+    lineLayer.fillColor = [UIColor RandomColor].CGColor;
+    lineLayer.strokeColor = [UIColor RandomColor].CGColor;
     [self.layerView.layer addSublayer:lineLayer];
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
@@ -109,7 +119,7 @@ IB_DESIGNABLE
     [path addCurveToPoint:endPoint controlPoint1:controlPoint controlPoint2:controlPoint1];
     layer.path = path.CGPath;
     layer.fillColor = [UIColor clearColor].CGColor;
-    layer.strokeColor = [UIColor blackColor].CGColor;
+    layer.strokeColor = [UIColor RandomColor].CGColor;
     
     [self.layerView.layer addSublayer:layer];
     
@@ -152,7 +162,8 @@ IB_DESIGNABLE
     
     nameLayer.path = namePath.CGPath;
     nameLayer.fillColor = [UIColor clearColor].CGColor;
-    nameLayer.strokeColor = [UIColor blackColor].CGColor;
+    nameLayer.strokeColor = [UIColor RandomColor].CGColor;
+    nameLayer.lineCap = kCALineCapRound;
     nameLayer.lineWidth = 5;
     [self.layerView.layer addSublayer:nameLayer];
     
@@ -164,14 +175,39 @@ IB_DESIGNABLE
     
 }
 
+
+// 创建不规则图形
+- (void)creatPathWithView:(UIView *)pathView{
+    CGFloat cornerSpace = 3;
+    CGFloat viewWidth = CGRectGetWidth(pathView.frame);
+    CGFloat viewHeight = CGRectGetHeight(pathView.frame) - cornerSpace;
+    CAShapeLayer *signLayer = [CAShapeLayer layer];
+    UIBezierPath *signPath = [UIBezierPath bezierPath];
+    [signPath moveToPoint:CGPointMake(0, 0)];
+    [signPath addLineToPoint:CGPointMake(viewWidth, 0)];
+    [signPath addLineToPoint:CGPointMake(viewWidth, viewHeight)];
+    [signPath addLineToPoint:CGPointMake(viewWidth/2 + cornerSpace, viewHeight)];
+    [signPath addLineToPoint:CGPointMake(viewWidth/2, viewHeight + cornerSpace)];
+    [signPath addLineToPoint:CGPointMake(viewWidth/2 - cornerSpace, viewHeight)];
+    [signPath addLineToPoint:CGPointMake(0, viewHeight)];
+    [signPath closePath];
+    signLayer.path = signPath.CGPath;
+    pathView.layer.mask = signLayer;
+}
+
 - (void)creatRound{
     CAShapeLayer *roundLayer = [CAShapeLayer layer];
-    UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(20, 20, 200, 200)];
-    [path appendPath:[UIBezierPath bezierPathWithRoundedRect:CGRectMake(20, 20, 200, 200) cornerRadius:100].bezierPathByReversingPath];
-    roundLayer.fillColor = [UIColor redColor].CGColor;
+    UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(40, 20, 300, 200)];
+    [path appendPath:[UIBezierPath bezierPathWithRoundedRect:CGRectMake(100, 20, 200, 200) cornerRadius:100].bezierPathByReversingPath];
+
+//    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(20, 180, 200, 400) byRoundingCorners:UIRectCornerTopLeft cornerRadii:CGSizeMake(100, 10)];
+    
+    roundLayer.fillColor = [UIColor RandomColor].CGColor;
 //    roundLayer.strokeColor = [UIColor redColor].CGColor;
     roundLayer.path = path.CGPath;
     [self.layerView.layer addSublayer:roundLayer];
+    
+    
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     animation.fromValue = @0;
@@ -182,18 +218,35 @@ IB_DESIGNABLE
 
 - (void)creatCycle{
     CAShapeLayer *cycleLayer = [CAShapeLayer layer];
-    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(300, 200) radius:50 startAngle:M_PI_2 endAngle:M_PI*2+M_PI_2 clockwise:YES];
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(300, 200) radius:50 startAngle:M_PI_2 endAngle:M_PI*2 clockwise:YES];
     cycleLayer.path = path.CGPath;
-    cycleLayer.fillColor = [UIColor clearColor].CGColor;
-    cycleLayer.strokeColor = [UIColor greenColor].CGColor;
+    cycleLayer.fillColor = [UIColor RandomColor].CGColor;
+    cycleLayer.strokeColor = [UIColor RandomColor].CGColor;
     cycleLayer.lineWidth = 5;
     [self.layerView.layer addSublayer:cycleLayer];
     
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     animation.fromValue = @0;
     animation.toValue = @1;
-    animation.duration = 5;
+    animation.duration = 3;
     [cycleLayer addAnimation:animation forKey:nil];
+    
+}
+
+- (void)creatVoice: (CGFloat)voicePower{
+    UIView *dynamicView = [[UIView alloc] initWithFrame:CGRectMake(20, 100, 20, 50)];
+    dynamicView.backgroundColor = [UIColor RandomColor];
+    dynamicView.clipsToBounds = YES;
+    [self.view addSubview:dynamicView];
+    
+        CGFloat height = (voicePower)*(CGRectGetHeight(dynamicView.frame));
+    
+    
+        UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, CGRectGetHeight(dynamicView.frame)-height, CGRectGetWidth(dynamicView.frame), height) cornerRadius:10];
+        CAShapeLayer *indicateLayer = [CAShapeLayer layer];
+        indicateLayer.path = path.CGPath;
+        indicateLayer.fillColor = [UIColor redColor].CGColor;
+        [dynamicView.layer addSublayer:indicateLayer];
     
 }
 

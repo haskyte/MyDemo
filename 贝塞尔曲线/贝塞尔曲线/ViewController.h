@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIColor+RandomColor.h"
 
 @interface ViewController : UIViewController
 

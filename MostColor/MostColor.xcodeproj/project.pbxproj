@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53F6F6581DACC5E9003310FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F6F6571DACC5E9003310FB /* main.m */; };
+		53F6F65B1DACC5E9003310FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F6F65A1DACC5E9003310FB /* AppDelegate.m */; };
+		53F6F65E1DACC5E9003310FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F6F65D1DACC5E9003310FB /* ViewController.m */; };
+		53F6F6611DACC5E9003310FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F6F65F1DACC5E9003310FB /* Main.storyboard */; };
+		53F6F6631DACC5E9003310FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F6F6621DACC5E9003310FB /* Assets.xcassets */; };
+		53F6F6661DACC5E9003310FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F6F6641DACC5E9003310FB /* LaunchScreen.storyboard */; };
+		53F6F6711DACC5E9003310FB /* MostColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F6F6701DACC5E9003310FB /* MostColorTests.m */; };
+		53F6F67C1DACC5E9003310FB /* MostColorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F6F67B1DACC5E9003310FB /* MostColorUITests.m */; };
+		53F6F68A1DACC604003310FB /* backimage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F6F6891DACC604003310FB /* backimage@2x.png */; };
+		53F6F68C1DACC77F003310FB /* testimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F6F68B1DACC77F003310FB /* testimage.png */; };
+		53F6F68E1DACC8D8003310FB /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F6F68D1DACC8D8003310FB /* test1.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53F6F66D1DACC5E9003310FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53F6F64B1DACC5E9003310FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53F6F6521DACC5E9003310FB;
+			remoteInfo = MostColor;
+		};
+		53F6F6781DACC5E9003310FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53F6F64B1DACC5E9003310FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53F6F6521DACC5E9003310FB;
+			remoteInfo = MostColor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53F6F6531DACC5E9003310FB /* MostColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MostColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F6F6571DACC5E9003310FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53F6F6591DACC5E9003310FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53F6F65A1DACC5E9003310FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53F6F65C1DACC5E9003310FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		53F6F65D1DACC5E9003310FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		53F6F6601DACC5E9003310FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53F6F6621DACC5E9003310FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53F6F6651DACC5E9003310FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53F6F6671DACC5E9003310FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53F6F66C1DACC5E9003310FB /* MostColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MostColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F6F6701DACC5E9003310FB /* MostColorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MostColorTests.m; sourceTree = "<group>"; };
+		53F6F6721DACC5E9003310FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53F6F6771DACC5E9003310FB /* MostColorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MostColorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F6F67B1DACC5E9003310FB /* MostColorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MostColorUITests.m; sourceTree = "<group>"; };
+		53F6F67D1DACC5E9003310FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53F6F6891DACC604003310FB /* backimage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backimage@2x.png"; sourceTree = "<group>"; };
+		53F6F68B1DACC77F003310FB /* testimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testimage.png; sourceTree = "<group>"; };
+		53F6F68D1DACC8D8003310FB /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test1.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53F6F6501DACC5E9003310FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F6F6691DACC5E9003310FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F6F6741DACC5E9003310FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53F6F64A1DACC5E9003310FB = {
+			isa = PBXGroup;
+			children = (
+				53F6F6551DACC5E9003310FB /* MostColor */,
+				53F6F66F1DACC5E9003310FB /* MostColorTests */,
+				53F6F67A1DACC5E9003310FB /* MostColorUITests */,
+				53F6F6541DACC5E9003310FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53F6F6541DACC5E9003310FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53F6F6531DACC5E9003310FB /* MostColor.app */,
+				53F6F66C1DACC5E9003310FB /* MostColorTests.xctest */,
+				53F6F6771DACC5E9003310FB /* MostColorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53F6F6551DACC5E9003310FB /* MostColor */ = {
+			isa = PBXGroup;
+			children = (
+				53F6F6591DACC5E9003310FB /* AppDelegate.h */,
+				53F6F65A1DACC5E9003310FB /* AppDelegate.m */,
+				53F6F65C1DACC5E9003310FB /* ViewController.h */,
+				53F6F65D1DACC5E9003310FB /* ViewController.m */,
+				53F6F65F1DACC5E9003310FB /* Main.storyboard */,
+				53F6F68B1DACC77F003310FB /* testimage.png */,
+				53F6F6621DACC5E9003310FB /* Assets.xcassets */,
+				53F6F6641DACC5E9003310FB /* LaunchScreen.storyboard */,
+				53F6F6671DACC5E9003310FB /* Info.plist */,
+				53F6F6891DACC604003310FB /* backimage@2x.png */,
+				53F6F68D1DACC8D8003310FB /* test1.png */,
+				53F6F6561DACC5E9003310FB /* Supporting Files */,
+			);
+			path = MostColor;
+			sourceTree = "<group>";
+		};
+		53F6F6561DACC5E9003310FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53F6F6571DACC5E9003310FB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53F6F66F1DACC5E9003310FB /* MostColorTests */ = {
+			isa = PBXGroup;
+			children = (
+				53F6F6701DACC5E9003310FB /* MostColorTests.m */,
+				53F6F6721DACC5E9003310FB /* Info.plist */,
+			);
+			path = MostColorTests;
+			sourceTree = "<group>";
+		};
+		53F6F67A1DACC5E9003310FB /* MostColorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53F6F67B1DACC5E9003310FB /* MostColorUITests.m */,
+				53F6F67D1DACC5E9003310FB /* Info.plist */,
+			);
+			path = MostColorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53F6F6521DACC5E9003310FB /* MostColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53F6F6801DACC5E9003310FB /* Build configuration list for PBXNativeTarget "MostColor" */;
+			buildPhases = (
+				53F6F64F1DACC5E9003310FB /* Sources */,
+				53F6F6501DACC5E9003310FB /* Frameworks */,
+				53F6F6511DACC5E9003310FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MostColor;
+			productName = MostColor;
+			productReference = 53F6F6531DACC5E9003310FB /* MostColor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53F6F66B1DACC5E9003310FB /* MostColorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53F6F6831DACC5E9003310FB /* Build configuration list for PBXNativeTarget "MostColorTests" */;
+			buildPhases = (
+				53F6F6681DACC5E9003310FB /* Sources */,
+				53F6F6691DACC5E9003310FB /* Frameworks */,
+				53F6F66A1DACC5E9003310FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53F6F66E1DACC5E9003310FB /* PBXTargetDependency */,
+			);
+			name = MostColorTests;
+			productName = MostColorTests;
+			productReference = 53F6F66C1DACC5E9003310FB /* MostColorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53F6F6761DACC5E9003310FB /* MostColorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53F6F6861DACC5E9003310FB /* Build configuration list for PBXNativeTarget "MostColorUITests" */;
+			buildPhases = (
+				53F6F6731DACC5E9003310FB /* Sources */,
+				53F6F6741DACC5E9003310FB /* Frameworks */,
+				53F6F6751DACC5E9003310FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53F6F6791DACC5E9003310FB /* PBXTargetDependency */,
+			);
+			name = MostColorUITests;
+			productName = MostColorUITests;
+			productReference = 53F6F6771DACC5E9003310FB /* MostColorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53F6F64B1DACC5E9003310FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = wujianqiang;
+				TargetAttributes = {
+					53F6F6521DACC5E9003310FB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					53F6F66B1DACC5E9003310FB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 53F6F6521DACC5E9003310FB;
+					};
+					53F6F6761DACC5E9003310FB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 53F6F6521DACC5E9003310FB;
+					};
+				};
+			};
+			buildConfigurationList = 53F6F64E1DACC5E9003310FB /* Build configuration list for PBXProject "MostColor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53F6F64A1DACC5E9003310FB;
+			productRefGroup = 53F6F6541DACC5E9003310FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53F6F6521DACC5E9003310FB /* MostColor */,
+				53F6F66B1DACC5E9003310FB /* MostColorTests */,
+				53F6F6761DACC5E9003310FB /* MostColorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53F6F6511DACC5E9003310FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F6F6661DACC5E9003310FB /* LaunchScreen.storyboard in Resources */,
+				53F6F68A1DACC604003310FB /* backimage@2x.png in Resources */,
+				53F6F6631DACC5E9003310FB /* Assets.xcassets in Resources */,
+				53F6F68C1DACC77F003310FB /* testimage.png in Resources */,
+				53F6F6611DACC5E9003310FB /* Main.storyboard in Resources */,
+				53F6F68E1DACC8D8003310FB /* test1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F6F66A1DACC5E9003310FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F6F6751DACC5E9003310FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53F6F64F1DACC5E9003310FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F6F65E1DACC5E9003310FB /* ViewController.m in Sources */,
+				53F6F65B1DACC5E9003310FB /* AppDelegate.m in Sources */,
+				53F6F6581DACC5E9003310FB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F6F6681DACC5E9003310FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F6F6711DACC5E9003310FB /* MostColorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F6F6731DACC5E9003310FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F6F67C1DACC5E9003310FB /* MostColorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53F6F66E1DACC5E9003310FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53F6F6521DACC5E9003310FB /* MostColor */;
+			targetProxy = 53F6F66D1DACC5E9003310FB /* PBXContainerItemProxy */;
+		};
+		53F6F6791DACC5E9003310FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53F6F6521DACC5E9003310FB /* MostColor */;
+			targetProxy = 53F6F6781DACC5E9003310FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53F6F65F1DACC5E9003310FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53F6F6601DACC5E9003310FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53F6F6641DACC5E9003310FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53F6F6651DACC5E9003310FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53F6F67E1DACC5E9003310FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53F6F67F1DACC5E9003310FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53F6F6811DACC5E9003310FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MostColor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujianqiang.MostColor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		53F6F6821DACC5E9003310FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MostColor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujianqiang.MostColor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		53F6F6841DACC5E9003310FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MostColorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujianqiang.MostColorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MostColor.app/MostColor";
+			};
+			name = Debug;
+		};
+		53F6F6851DACC5E9003310FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MostColorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujianqiang.MostColorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MostColor.app/MostColor";
+			};
+			name = Release;
+		};
+		53F6F6871DACC5E9003310FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MostColorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujianqiang.MostColorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MostColor;
+			};
+			name = Debug;
+		};
+		53F6F6881DACC5E9003310FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MostColorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wujianqiang.MostColorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MostColor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53F6F64E1DACC5E9003310FB /* Build configuration list for PBXProject "MostColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F6F67E1DACC5E9003310FB /* Debug */,
+				53F6F67F1DACC5E9003310FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53F6F6801DACC5E9003310FB /* Build configuration list for PBXNativeTarget "MostColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F6F6811DACC5E9003310FB /* Debug */,
+				53F6F6821DACC5E9003310FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		53F6F6831DACC5E9003310FB /* Build configuration list for PBXNativeTarget "MostColorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F6F6841DACC5E9003310FB /* Debug */,
+				53F6F6851DACC5E9003310FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		53F6F6861DACC5E9003310FB /* Build configuration list for PBXNativeTarget "MostColorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F6F6871DACC5E9003310FB /* Debug */,
+				53F6F6881DACC5E9003310FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53F6F64B1DACC5E9003310FB /* Project object */;
+}
